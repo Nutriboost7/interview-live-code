@@ -4,62 +4,105 @@ This folder contains three short coding exercises intended for live coding or ta
 
 Files
 
+<!-- Polished README for the `basic-fundamental` exercise set -->
+
+# Basic Fundamental — Live Coding Exercises
+
+A compact set of three short programming problems used for live-coding or take-home assessments. Each problem has its own file with a precise description, examples, and hints located in the `basic-fundamental` folder.
+
+Files in `basic-fundamental/`:
+
 - `1.readme.md` — Problem 1: Snail Sort (spiral traversal of a square matrix)
 - `2.readme.md` — Problem 2: Stop gninnipS My sdroW! (reverse words with length >= 5)
 - `3.readme.md` — Problem 3: Sum of Digits / Digital Root
 
-Goal
+---
 
-Evaluate candidates on: reading and understanding requirements, designing a correct solution, handling edge cases, code clarity, and describing complexity/trade-offs.
+## Table of contents
 
-How to approach the exercises (for candidates)
+1. [Quick start](#quick-start)
+2. [Problem summaries](#problem-summaries)
+3. [How candidates should approach the tasks](#how-candidates-should-approach-the-tasks)
+4. [Suggested grading rubric](#suggested-grading-rubric)
+5. [Submission & interviewer notes](#submission--interviewer-notes)
 
-1) Time budget
-- Suggestion: 30–45 minutes per problem in a live interview. For take-home, allow more time as appropriate.
+---
 
-2) Read carefully
-- Open the specific problem file (`1.readme.md`, `2.readme.md`, or `3.readme.md`) and confirm input/output formats and constraints before coding.
+## Quick start
 
-3) Coding quality
-- Correctness: code must meet the problem requirements and pass given examples.
-- Clarity: meaningful names, short comments for non-obvious logic, and small helper functions.
-- Edge cases: handle empty inputs, small/large inputs, and invalid formats if the problem allows.
-- Efficiency: mention time and space complexity if relevant.
+For candidates:
 
-4) Testing
-- Include 2–4 example runs (happy path + edge cases). If possible add a tiny test file (e.g. `tests.py` or `tests.js`).
+- Read the specific problem file under `basic-fundamental/` and confirm input/output formats and constraints.
+- Implement a solution (function or small program) and include a short README snippet showing how to run it.
 
-5) Explanation
-- Add a short explanation (3–6 lines) of your approach and why you chose it. Note trade-offs and any remaining limitations.
-
-Submission
-
-- Submit a ZIP of your solution or open a pull request. Include the source code, any test files, and a short README explaining how to run the code (example commands).
-
-Example run commands (candidate should document their actual commands):
+Example commands (document the exact commands you used):
 
 ```bash
-# Python example
-python3 solution.py < input.txt
+# Python
+python3 solution.py
 
-# Node.js example
-node index.js < input.txt
+# Node.js
+node index.js
 ```
 
-Grading rubric (suggested)
+If your solution reads from STDIN, mention that and provide sample input files.
 
-- 40% Correctness: passes examples and main test cases
-- 20% Edge case handling: empty/invalid inputs and boundary conditions
-- 15% Code clarity: naming, structure, and comments
-- 15% Efficiency: reasonable algorithm for stated constraints
-- 10% Documentation: run instructions and short explanation
+---
 
-Notes for interviewers
+## Problem summaries
 
-- Run the candidate's code using their documented commands and the provided examples.
-- Ask the candidate to explain time/space complexity and where they would optimize further.
-- Optionally run additional tests not shown to the candidate to check robustness.
+- **Problem 1 — Snail Sort**
+	- Spiral traversal of an n x n matrix. Return elements from outer layer to center in clockwise order.
 
-Want more?
+- **Problem 2 — Stop gninnipS My sdroW!**
+	- Given a string of words, reverse every word with length >= 5 while preserving word order and spacing.
 
-- I can add runnable skeletons and automated tests (Python/Node), or a stricter rubric. Tell me which language you prefer and which extra artifacts you want me to create next.
+- **Problem 3 — Sum of Digits / Digital Root**
+	- Repeatedly sum the digits of a non-negative integer until a single digit remains; return that digit.
+
+Refer to each `basic-fundamental/*.readme.md` for full details, examples and hints.
+
+---
+
+## How candidates should approach the tasks
+
+1. **Clarify** input/output expectations and constraints.
+2. **Prototype** a correct, readable solution first. Add comments for non-obvious logic.
+3. **Test** edge cases: empty inputs, small/large values, and typical corner cases.
+4. **State** complexity (time/space) and possible optimizations.
+5. **Document** how to run the solution and include sample runs.
+
+Time guidance:
+
+- Live interview: ~30–45 minutes per problem.
+- Take-home: adjust time according to hiring level and problem difficulty.
+
+---
+
+## Suggested grading rubric
+
+- **Correctness (40%)** — Produces correct results for examples and main cases.
+- **Edge-case handling (20%)** — Handles empty/invalid/boundary inputs sensibly.
+- **Code clarity (15%)** — Readable, modular, and sufficiently commented code.
+- **Efficiency (15%)** — Reasonable algorithm choice for the stated constraints.
+- **Documentation (10%)** — Clear run instructions and short approach explanation.
+
+Adapt weights based on your hiring bar and time limits.
+
+---
+
+## Submission & interviewer notes
+
+- Preferred submission: ZIP file or pull request with source, tests and a README snippet describing how to run.
+- Interviewers: run the candidate's code using their documented commands and ask them to explain trade-offs and optimizations.
+- Consider preparing a few hidden tests to spot robustness issues.
+
+---
+
+If you want, I can next:
+
+- Add starter solution skeletons (Python/Node) for each problem.
+- Add a small test harness (`tests.py` / `tests.js`) and `run.sh`.
+- Provide a detailed per-problem grading rubric.
+
+Tell me which option and which language you prefer and I will add it.
