@@ -15,9 +15,9 @@ let alphabetic = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P
         alphabetic = alphabetic.filter(v => v !== text)
     }
     if (alphabetic.length > 0) {
-        return false
+        return 'False'
     } else {
-        return true
+        return 'True'
     }
 }
 for (const t of test) {
